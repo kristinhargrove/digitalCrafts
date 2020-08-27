@@ -1,0 +1,47 @@
+
+//Tip Calculator - DONE
+
+function tipAmount(total, service) {
+    if (service == "good") {
+        return total * .2;
+    } else if (service == "fair") {
+        return total * .15;
+    } else if (service == "bad") {
+        return total * .1;
+    }
+};
+
+console.log(tipAmount(50, "good"));
+console.log(tipAmount(50, "fair"));
+console.log(tipAmount(50, "bad"));
+
+//Tip Calculator 2 - DONE
+
+function totalAmount(total, service) {
+    if (service == "good") {
+        return total += total *.2;
+    } else if (service == "fair") {
+        return total += total * .15;
+    } else if (service == "bad") {
+        return total += total * .1;
+    }
+}
+
+console.log(totalAmount(50, "good"));
+console.log(totalAmount(50, "fair"));
+console.log(totalAmount(50, "bad"));
+
+// Tip Calculator 3 - DONE
+
+function splitAmount(total, service, guestNumber) {
+    if (service == "good") {
+        return (total + (total * .2)) / guestNumber;
+    } else if (service == "fair") {
+        return (total + (total * .15)) / guestNumber;
+    } else if (service == "bad") {
+        return (total + (total * .15)) / guestNumber;
+    }
+}
+
+console.log(splitAmount(100, 'good', 5));
+console.log(splitAmount(40, 'fair', 2));
